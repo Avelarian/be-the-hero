@@ -29,7 +29,7 @@ export default function Register() {
         try {
             const response = await api.post('ongs', data);
 
-            alert(`Seu ID de acesso: $(response.data.id)`);
+            alert('Seu ID de acesso: ' + response.data.id);
 
             history.push('/');
         } catch (err) {
